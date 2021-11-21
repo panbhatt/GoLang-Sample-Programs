@@ -43,4 +43,10 @@ func main() {
 	newSl := s[0:1:1] // means len and cap would be 1
 	fmt.Printf("LEN = %d CAP = %d " , len(newSl), cap(newSl))
 
+	// getting a slice [a:b] from Array give you a slice always and pointing to the
+	// same parameter. 
+	// ALways use [a:b:c] format to get the fixed cut of a STRING and never change it. 
+	// use copy()
+	
+
 }
