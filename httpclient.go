@@ -23,6 +23,7 @@ func main() {
 
     if err != nil {
         fmt.Println("AN Error occur, while hitting the web service")
+        
         os.Exit(1)
     }
 
@@ -47,7 +48,7 @@ func main() {
         }
 
         for i, item := range todos {
-            fmt.Printf("%d ID = %d Title = %s  Completed = %b\n ", i+1, item.Id, item.Title, item.Completed)
+            fmt.Printf("%d ID = %d Title = %s  Completed = %t\n ", i+1, item.Id, item.Title, item.Completed)
         }
     }
 
