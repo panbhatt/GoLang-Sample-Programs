@@ -23,5 +23,6 @@ func main() {
 	fmt.Println(sum(5, sl...))
 
 
-
+	fmt.Printf("%8b \n", 10)
+	fmt.Printf("%4x \n", 10)
 }
